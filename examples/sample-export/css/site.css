@@ -1,0 +1,7 @@
+@font-face { font-family: 'Serif Display'; src: url('../fonts/serif.woff2') format('woff2'); }
+.div-block-12 { width: 900px; height: 100vh; }
+.hero { width: 100vw; }
+.unused_card { color: red; }
+body { overflow-x: hidden; }
+@media screen and (max-width: 991px) { .heading-3 { font-size: 32px; } }
+@media screen and (max-width: 1024px) { .heading-3 { font-size: 36px; } }

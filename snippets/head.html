@@ -1,0 +1,12 @@
+<!-- Site <head> custom code. Hides [data-anim] elements only while JavaScript can still animate them. -->
+<script>
+  document.documentElement.classList.add('wf-anim');
+  // Failsafe: if the GSAP files never load, show the content after 3 seconds rather than leaving it hidden.
+  setTimeout(function () { document.documentElement.classList.remove('wf-anim'); }, 3000);
+</script>
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    html.wf-anim [data-anim] { visibility: hidden; }
+  }
+</style>
+<noscript><style>[data-anim] { visibility: visible !important; }</style></noscript>

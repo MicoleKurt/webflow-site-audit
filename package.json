@@ -1,0 +1,16 @@
+{
+  "name": "webflow-site-audit",
+  "version": "0.1.0",
+  "description": "Audit a Webflow site's class system, responsive CSS, performance, SEO, Finsweet Attributes and GSAP code, and its CMS content through the Data API v2.",
+  "type": "module",
+  "bin": { "wfa": "src/cli.js" },
+  "main": "src/index.js",
+  "scripts": { "test": "node --test \"tests/*.test.js\"" },
+  "engines": { "node": ">=20" },
+  "keywords": ["webflow", "client-first", "finsweet", "gsap", "cms", "audit", "lint"],
+  "author": "Micole Kurt T. Gonda <ico.webdev@gmail.com>",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/MicoleKurt/webflow-site-audit.git" },
+  "dependencies": { "cheerio": "^1.0.0", "postcss": "^8.4.47" },
+  "devDependencies": { "jsdom": "^25.0.1" }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Harbor Point Architects</title>
+  <link href="css/site.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+  <section class="Hero-Section">
+    <div class="div-block-12">
+      <h2 class="heading-3">Buildings that last</h2>
+      <img src="images/hero.jpg" loading="lazy" class="image-4">
+      <a href="/contact" class="button is-secondary"></a>
+    </div>
+  </section>
+  <section class="section_home_projects">
+    <div class="container-large padding-global padding-section-large text-align-center is-dark">
+      <div class="is-featured">Featured</div>
+      <h1 class="heading-style-h2">Projects</h1>
+      <h4 class="heading-style-h4">Skips a level</h4>
+    </div>
+  </section>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".div-block-12", { width: 400, scrollTrigger: { trigger: ".div-block-12", markers: true } });
+  </script>
+</body>
+</html>
